@@ -58,5 +58,10 @@ const customTag = {
         } else {
             console.error(`Container with ID "${containerId}" not found.`);
         }
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            customTag.render('container');
+        });
     }
+   
 }
